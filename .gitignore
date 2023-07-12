@@ -1,0 +1,48 @@
+# Archivos generados por Visual Studio o Rider
+.vs/
+bin/
+obj/
+
+# Archivos generados por la construcción y publicación de la aplicación
+/out/
+/*.sln.cache
+/*.userprefs
+/*.csproj.nuget.g.props
+/*.csproj.nuget.g.targets
+/.dotnet/
+/*.dll
+/*.exe
+/*.pdb
+/*.log
+/*.swp
+
+# Archivos de configuración específicos para entornos locales o de desarrollo
+appsettings.Development.json
+
+# Archivos específicos de entornos de prueba
+appsettings.Test.json
+
+# Carpeta de herramientas de NuGet
+/tools/
+
+# Carpeta de dependencias de NuGet
+/packages/
+
+# Archivos de registro
+/*.log
+
+# Archivos y carpetas generados por Docker
+/app/out/
+/app/.nuget/
+
+# Archivos de respaldo o temporales
+*.bak
+*.tmp
+
+# Archivos de usuario o configuración personalizada
+/app/appsettings.user.json
+/app/*.user
+
+# Archivos y carpetas específicos para entornos de desarrollo
+/app/wwwroot/
+/app/*.pfx
