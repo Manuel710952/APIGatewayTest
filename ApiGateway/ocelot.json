@@ -6,8 +6,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "micros1",
-          "Port": "8081"
+          "Host": "micros5",
+          "Port": "8080"
         }
       ],
       "FileCacheOptions": {
@@ -19,7 +19,24 @@
         "GET"
       ]
     },
-   
+    {
+      "DownstreamPathTemplate": "/api/catalogos",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "micros6",
+          "Port": "80"
+        }
+      ],
+      "FileCacheOptions": {
+        "TtlSeconds": 30,
+        "Region": "customercaching"
+      },
+      "UpstreamPathTemplate": "/apiGateway/consulta/normal",
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
+    }
   ],
   "GlobalConfiguration": {
     "BaseUrl": "http://localhost:8080"
